@@ -1,0 +1,222 @@
+/*Este codigos estan en la rama-uno-curso*/
+/* Celectores Css*/
+/* Celector universal * 
+   * {
+      color: color;
+   }  */  
+/*Celector de tipo */
+h1
+  {
+    color: blue;
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    font-family: "Dancing Script", "cursive";
+  }
+
+h2 
+  {
+    color: blue;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+  }
+
+h3
+  {
+    color: rgb(26, 128, 0);
+    font-size: 30px; 
+  }
+
+p {
+    color: purple;
+    font-size: 25px;
+  }
+ /* Celector de clase individual */
+ .ListaDeGato 
+  {
+    color: chocolate;
+  }
+  /* Para usar varios celectores 
+  de tipo separamos con una coma
+  p,
+  ul,
+  ol 
+  }
+  font-size: 20px 
+  }*/
+  /* Como afectar todas las imagenes con 
+  el elemento width que seria el ancho y el elemeto height
+  que seria el alto*/ 
+  img 
+  {
+    width: 310px; 
+    height: 350px;
+  }
+    .imagen-de-gato 
+    {
+      width: 200px;
+      border-width: 5px;
+      border-color: blue;
+      border-style: solid;
+    }
+
+    /*Bordes Redondeados, 50% es redondo*/
+     .bordes-redondeados 
+     {
+        border-radius: 20px;
+     }
+
+     /* Color de fondo de un div */
+     div 
+      {
+        background-color: blue;
+      }
+      
+      /* Contenedor de listas */
+      .contenedor-listas 
+      {
+        background-color: silver;
+      }
+     /* Asignar un id a estructura en el html */ 
+      #titulo-principal
+      { 
+        font-size: 50px;
+        color: green;
+        font-family: "sego UI", 'Segoe UI', Tahoma, Verdana, sans-serif;
+      }
+       /* Asignar un id a estructura en el html
+       en este caso a un img */
+        #imagen-de-gatos
+      {
+        border-radius: 50%;
+        border-width: 5px;
+        border-style: solid;
+        border-color: brown;
+      }
+      /* Asignar un id a estructura en el html
+      en este caso a una lista */
+      #lista-gatos-aman
+      {
+        font-size: 18px;
+        color:blueviolet !important;
+      }
+      #lista-gatos-odian
+      {
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      div
+      /* se aplica a img del certificado*/
+      {       
+        background-color: crimson;
+      }
+      .certificado-ap
+      {
+         
+        width: 400px; 
+        height: 350px;                
+        padding: 5px;
+        margin: 15px;       
+        background-color: green;
+        border-width: 5px;
+        border-color: black;
+        border-width: 5px;
+        border-style: solid; 
+      }
+      /*IMPORTANTE prioridades:
+      El orden de las class en html es indistina y no influyen en 
+      el resultado del conflicto. Si, en css como muestra el EJ.
+      .texto-azul
+      {
+        color azul;
+      }
+      .texto-morado
+      { 
+        color morado;
+      }    
+      Por el efecto cascada la prioridad en la class va ser     
+      en la pantalla TEXTO morado*/ 
+      /*Las .class tienen priridad sobre los 
+      celectore de tipo, a{
+      El id # tiene prioridad sobre las .class y los celectores.  
+      Prioridades de los estilos en linia
+      Ej en html linea 189 */
+      /*.texto-azul, Esto tambien aplica en los id#
+      {
+        color: blue !important;
+      }*/
+      
+      /*Tambien para disponer colores se pueden usar exadecimal y rgv
+      color: #f00; esto es exadecimal y se pueden acortar el numero 
+      a tres digito solo si se repiten de apares Ej #00ff00 #0f0
+      RGV color: rgb(0, 255, 255); Nota:Si el codigo rgv usa transparencia 
+      se agrega una letra mas 
+      (a) color: rgva(255, 5, 80, 0.4);
+      Estos codigos se extraen de google
+      en el sitio colour picker*/ 
+
+      /*Paddin es la distancia que hay entre el borde asia abajo que esta su contenido"img"
+        Margin es la distancia que hay entre el borde asia arriba 
+      Padding y Margin a Cada Lado:
+        padding-top: 20px Borde superior 
+        padding-right: 15px Borde derecho
+        padding-left: 10px Borde izquierdo
+        padding-bottom: 5px Borde inferior
+        
+        Padding y Marginen una sola linea:
+        Padding: 20px 15px 5px 10px
+        El orden del padding se coloca como las agujas del relock  
+      */ 
+         
+      /* El Margin es la distancia entre el borde de un elemento 
+      y otros elemrntos */
+    
+      /*Selector de atributos*/
+      
+      input[type="radio"] 
+        {
+          margin: 5px
+        }
+      input[type="checkbox"] 
+        {
+          margin: 8px
+        }
+      a[href="https://www.freecodecamp.org/espanol/"]
+        {
+          color: crimson;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        div
+        /* se aplica al contenedor principa*/
+        {       
+          background-color: yellow;
+        }
+      #contenedor-principal{        
+        color: white;
+        padding: 5px;
+        font-size: 15px;
+        background-color: yellow;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .rectangulo
+      {
+        padding: 5px;
+        margin: 5px;
+      }
+      .px /*Unidad absoluta*/
+      {
+        background-color: crimson;
+        width: 200px;
+      }
+      .vw /*Unidad Relativa sobre el contenedor, 
+          depende del tamaño del nabegador*/
+      {
+        background-color: darkmagenta;
+        width: 20vw;
+      }
+      .em /*Unidad Relativa depende del tamaño de la letra*/
+      {
+        background-color: green;
+        width: 15em;
+        font-size: 1.5em;
+      }

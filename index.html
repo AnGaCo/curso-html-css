@@ -1,0 +1,238 @@
+ <!--Este codigos estan en la rama-uno-curso-->
+ <!DOCTYPE html>
+ <!--DOCTYPE indica la vercion que se esta usando-->
+ <html lang="es">
+   <!-- indica el idioma que se esta usando-->
+   <title>Curso html y Css de una App</title>
+   <head>
+      <!-- <head> "cabeza" de la extructura, extructura 
+      basica en Css -->
+      <title>AppDeGatos</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
+      <link href="style.css" rel="stylesheet">     
+   </head> 
+   <boyd>
+     <!-- El elemento <body> representa el contenido de un documento HTML.
+     Solo puede haber un elemento <body>en un documento.
+     <body> Es el "cuerpo" de la extructura -->
+     <h1 id="titulo-principal" >App de gatos</h1>
+     <!-- <h+numero> indica el titulo y subtitulo,
+     el tamaño varia del 1 al 6/> 
+     Para agregar un estilo en linea y darle color al subtitulo vamos
+     a implementar un atributo Css style <h2 style="color:blue">App de gatos</h2>-->
+      <main>
+       <!-- El elemento<main> representa el contenido principal <body>
+       El área principal del contenido consiste en el contenido que está,
+       directamente relacionado, o se expande sobre el tema central de un
+       documento. Este contenido debe ser único al documento, excluyendo 
+       cualquier contenido que se repita a través de un conjunto de documentos
+       como barras laterales, enlaces de navegación, logos del sitio
+       y formularios de búsqueda (a menos, claro, que la función principal
+       del documento sea un formulario de búsqueda). --> 
+       <h3>Imagenes de gatos:</h3> <!--Suptitulo -->
+       <!--Enlases a secciones internas-->
+       <a href="#parrafo-1">Parrafo 1</a>
+       <a href="#parrafo-2">Parrafo 2</a>
+       <a href="#parrafo-3">Parrafo 3</a>
+       <a href="#parrafo-4">Informacion</a>
+       <!-- <P> indica que se inicia un parrafo-->
+       <p>Haz click aqui para ver mas:<br> <a href="https://www.freecodecamp.org/espanol/"
+       target="_blank" rel="noopener noreferrer">imajenes de gatos.</a></p>
+       <!--El Elemento Anchor <a> crea un enlace a otras páginas de internet,
+       o archivos dentro de la misma página, direcciones de correo, o cualquier otra URL.  -->
+       
+       <!--Con el elemento <a> tambien podemos crear un enlace 
+        sobre una foto -->
+       <a href="https://www.expertoanimal.com/razas-de-gatos.html" target="_blank" 
+       rel="noopener noreferrer"><img class="bordes-redondeados" src="https://bit.ly/fcc-relaxing-cat" 
+       class="imagen-de-gato" alt="Un lindo 
+       gato naranja recostado sobre su espalda."></a>
+       <!--El elemento de imagen <img>representa una imagen en el documento. 
+       src= "origen"El descriptor src especifica el patt que contiene 
+       a la fuente. en el ej. se indica una direccion web. 
+       alt= descripcion de un grafico -->
+       
+       <!--Con el elemento <hr> se agrega una linea orisontal a la pagina 
+        puede ser util para separar parrafos-->
+        <hr>
+       <!--Listas no ordenadas <ul> se antepone una viñeta-->
+       <h2>Listas de gatos</h2>
+
+       <div class="contenedor-listas"> 
+          <p>Cosas que los gatos
+          <!--Etiqueta <em> destaca el texto rodeado en curciva-->
+          <em>aman</em></p>
+          
+          <!--axicnar una clase a lista no ordenada-->
+          <ul id="lista-gatos-aman" class="ListaDeGato">
+            <li>Menta gatuna</li>
+            <!--Etiqueta <s> destaca el texto rodeado como tachado-->
+            <li><s>Apuntadores lacer</s></li>
+            <li>Investigar</li>
+          </ul>
+          <img class="bordes-redondeados" src="C:\Users\M\Pictures\Saved Pictures/curioso.jpg" class="imagen-de-gato" width="310" height="200">
+
+          <!--Listas ordenadas <ol> se antepone un numero-->
+          <p>Cosas que los gatos 
+          <!--Etiqueta <strong> destaca el texto rodeado en negrita-->
+          <strong>odian</strong>:</p>
+
+          <ol id="lista-gatos-odian" class="ListaDeGato">
+            <li>Tratamientos anti pulgas</li>
+            <li>Truenos</li>
+            <li>Otros gatos</li>
+          </ol>
+       </div>
+       <!--Nota: El id predomina a las class, estan al pedo 
+       <img id="imagen-de-gatos" class="bordes-redondeados" src="C:\Users\M\Pictures\Saved Pictures/berrinche.jpg" class="imagen-de-gato">-->
+       <img id="imagen-de-gatos" src="C:\Users\M\Pictures\Saved Pictures/berrinche.jpg">
+       <h2> <a href="https://argentinaprograma.inti.gob.ar/?utm_source=emBlue&utm_medium=email&utm_campaign=APRENDE%20A%20PROGRAMAR&utm_content=3%20Asignaci%C3%B3n%20de%20vacantes%20#YoProgramo%20--Empez%C3%A1%20a%20cursar%20la%20segunda%20etapa%20de%20Argentina%20Programa&utm_term=YoProgramoJUN%20-%20D3--7--none--80-90--ENVIO%20SIMPLE&embtrk=6b9gi-R-56900016-R-5i3eq9b-R-6d9gl8," 
+       target="_blank" rel="noopener noreferrer"> Certificado </a>Final del curso AP4.0 </h2>
+       <div>        
+         <img class="certificado-ap" src="C:\Users\M\Pictures\Saved Pictures/certificado.jpg">
+         <!--En este caso <img> representa una imagen en el documento,
+         que esta en la PC, donde para modificar el tamaño ancho width="310"
+         y alto height="300" --> 
+       </div>
+          
+        <h3 id="parrafo-1">Parrafo 1</h3>
+        <p>En esta certificación de Diseño Web Adaptativo, aprenderás los lenguajes 
+        que los desarrolladores usan para construir páginas web: HTML (Lenguaje de 
+        Marcado de Hipertexto) para el contenido, y CSS (hojas de estilo en cascada)
+        para el diseño.</p>
+        
+        <h3 id="parrafo-2">Parrafo 2</h3>
+        <p>Primero, crearás una aplicación de fotos de gatos para aprender los conceptos básicos
+        de HTML y CSS. Más adelante, aprenderás técnicas modernas como variables CSS, 
+        mediante la construcción de un pingüino, y las mejores prácticas para la accesibilidad 
+        mediante la construcción de un sitio de cuestionarios.</p>
+       
+        <h3 id="parrafo-3">Parrafo 3</h3>
+        <p>Por último, aprenderás cómo hacer páginas web que respondan a diferentes tamaños 
+        de pantalla, mediante la construcción de una galería de fotos con Flexbox, 
+        y un diseño de artículos de revista con CSS Grid.</p>
+       
+        <h3 id="parrafo-4">Informacion</h3>
+        <!--La etiqueta <form>--> 
+        <p>El elemento formulario HTML form representa una sección de un documento que
+        contiene controles interactivos que permiten a un usuario enviar información a un 
+        servidor web.</p>
+         
+        <p>Todos los formularios comienzan con un elemento form, como este:
+        formacción="/my-handling-form-page" method="post"</p>
+          
+        <p>El atributo action=” ” define la ubicación (URL) donde se envían los datos
+        que el formulario ha recopilado cuando se validan…</p>
+          
+        <p>El elemento form define dónde y cómo enviar los datos gracias a los atributos
+        action=” ” y método.…</p>
+          
+        <p>El tipo ( type=” ” ) es una característica de un valor que afecta al tipo
+        de datos que puede almacenar; por ejemplo, en JavaScript un Boolean (en-US) 
+        solo tiene valores true/ false, mientras que un String contiene cadenas de texto,
+        un Numbercontiene números de cualquier tipo, y así sucesivamente.</p>
+          
+        <p>El elemento placeholder=” ” representa el texto provisional en un elemento input
+        o un elemento textarea. Nota: En la mayoría de los navegadores, la apariencia
+        del texto provisional es traslúcido o un color gris claro por defecto.</p>
+        
+        <p>Required: Obligatoriamente los input deben tener el atributo required aplicado a ellos.
+        Esto asegurará que las personas que naveguen con la ayuda de tecnología de asistencia,
+        como un lector de pantalla, puedan comprender qué entradas necesitan contenido válido 
+        para garantizar un envío exitoso.</p>
+          
+        <p>El elemento HTML input type="button" es una versión específica del elemento que
+        se usa para crear un botón en el que se puede hacer clic sin ningún valor por defecto,
+        es decir, no tiene un comportamiento predeterminado como por ejemplo.
+        En HTML5 ha sido reemplazado por el elemento button, input, input type="reset"
+        Los navegadores generan un controlador para un botón clicable sin valor por defecto. 
+        El botón puede contener cualquier texto. El controlador puede variar de un navegador
+        a otro. El elemento HTML input se usa para crear controles interactivos para 
+        formularios basados en la web con el fin de recibir datos del usuario. 
+        Hay disponible una amplia variedad de tipos de datos de entrada y widgets de control, 
+        que dependen del dispositivo y el agente de usuario ( agente de usuario (en-US)).
+        El elemento input es uno de los más potentes y complejos en todo HTML
+        debido a la gran cantidad de combinación de tipos y atributos de entrada</p>
+          
+        <form action="https://www.expertoanimal.com/razas-de-gatos.html" target="_blank"> 
+          <!--"/enviar-respuesta"-->
+          <!--Botones de Radio-->
+          <label for="interior"> 
+            <input id="interior" type="radio" value="interior" 
+            name="interior-exterior" checked>Prefiere Interior
+          </label>
+          <br>
+          <label for="exterior"><input id="exterior"type="radio"
+            value="exterior" name="interior-exterior">Prefiere Exterior
+          </label><br>
+          
+          <!--Casilla de verificacion-->
+          <label for="carinoso">
+            <input id="carinoso" type="checkbox" 
+            value="carinoso" name="pesonalidad" 
+            checked>Gato Cariñoso
+          </label>
+          <br>
+          <label for="perezoso">
+            <input id="perezoso" type="checkbox" 
+            value="perezoso"
+            name="pesonalidad">Gato Perezoso
+          </label>
+          <br>
+          <label for="energico">
+            <input id="energico"type="checkbox" 
+            value="energico" 
+            name="pesonalidad">Gato Energico
+          </label>
+          <br>
+          <!-- El orden de las class en html es indistina y 
+           no influyen en el resultado del conflicto Ej:
+          <h1>class "texto= azul texto=texto morado"</h1> Donde si importa es en css--> 
+          <!-- El estilo en linea "style" se prioriza sobre las .class y los id#-->
+          <!--Ej. <h1 id="titulo" style="color:purple" class="texto-azul"> HOLA MUNDO </h1>--> 
+          <!--Texto y boton enviar. Pero hay una forma de priorida sobre el style 
+           que es con (!important) Ej. en css linea 132-->
+          <input type="text" placeholder="URL de la foto de tu gato" required>
+          <button type="submit">Enviar</button>  
+        </form>
+     </main> 
+      <!--<footer>
+      <p><small>Sin derecho de autor - 
+      <a href="https://www.freecodecamp.org/espanol/"target="_blank"
+      rel="noopener noreferrer">freecodecamp.org</a></small></p> 
+      </footer>-->
+      <footer>
+       <nav>
+         <section>
+           <h1>Artículos de gatos</h1>
+            <p><img src= "C:\Users\M\Pictures\Saved Pictures/Gato-durmiendo (1).jpg"
+            alt="Gato durmiendo sobre la cama comodamente"><br>
+            <a href="articles/somersaults/1">Parte 1</a> 
+            <a href="articles/somersaults/2">Part 2</a>
+            </p> 
+            <p><img src="C:\Users\M\Pictures\Saved Pictures/Gato-durmiendo (2).jpg"
+            alt="Gato comodamente durmiendo sobre la cama"><br>
+            <a href="articles/kindplus/1">Leer más...</a></p>
+            <p><img src="C:\Users\M\Pictures\Saved Pictures/Perro-durmiendo.jpg"
+            alt="Perritos durmiendo placenteramente"><br> 
+            <a href="articles/crisps/1">Leer más...</a></p>
+         </section>
+         <ul id="lista-gatos-aman">
+           <li> <a href="/about">Sobre nosotrs, Buscar mas...</a>
+           <li> <a href="/feedback">Enviar comentarios!</a>
+           <li> <a href="/sitemap">mapa del sitio</a>
+          </ul>
+       </nav>
+         <p><small>Copyright © 2023 The Snacker —
+         <a href="/tos">Términos de servicio</a></small></p>
+     </footer>
+      
+      <div id="contenedor-principal">
+        <div class="rectangulo px">200px de ancho</div>
+        <div class="rectangulo vw">20vw de ancho</div>
+        <div class="rectangulo em">15em de ancho</div>
+      </div>
+   </body> 
+ </html> 

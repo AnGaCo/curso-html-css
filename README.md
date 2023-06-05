@@ -1,2 +1,2 @@
 # curso-html-css
-Curso-freeCodeCamp
+Curso-freeCodeCamp-practica 
